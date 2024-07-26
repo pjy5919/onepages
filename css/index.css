@@ -43,14 +43,8 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  margin: auto;
 }
-.mian1,
-.main2 .main3 {
-  flex: 1;
-  height: auto;
-  margin: 0 auto;
-}
+
 .main2 > p {
   font-size: 28px;
   text-align: center;
@@ -74,7 +68,7 @@ main {
 
 .one {
   margin: 15px;
-  max-width: 75%;
+  /* max-width: 75%; */
   height: 180px;
   background: rgba(255, 255, 255, 0.452);
   backdrop-filter: blur(4px);
@@ -83,7 +77,6 @@ main {
   border: 1.5px solid #afafaf;
   padding: 10px;
 }
-
 .line {
   border-radius: 5px;
   border: 1.5px solid #C1A8A0;
@@ -92,20 +85,21 @@ main {
   position: absolute;
   top: 10px;
   left: 15px;
+  z-index: -1;
 }
-
 .border2 {
 width: 99%;
   height: 96%;
   top: 20px;
   left: 5px;
+  z-index: -1;
 }
 
 .listall {
   display: flex;
 }
 .listall > .list {
-  max-width: 160px;
+ width: 160px;
   padding-left: 20px;
   padding-top: 20px;
 }
@@ -129,6 +123,7 @@ width: 99%;
   position: absolute;
   top: 10px;
   left:0;
+  animation: ani2 5s infinite;
 }
 .main_icon2>img{
   max-width: 500px;
@@ -136,12 +131,23 @@ width: 99%;
   top: 10px;
   right:0;
   z-index: -1;
+  animation: ani2 5s infinite;
 }
-
+@keyframes ani2 {
+  0% {
+    opacity:0.2;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    opacity:0.2;
+  }
+}
 .face >span, .name >p{
   font-size: 18px;
 }
-.face-img{
+.face-img>img{
   border-radius: 10px;
   min-width: 150px;
   height: 150px;
@@ -170,3 +176,8 @@ width: 99%;
   }
   .keyword1>img , .keyword>img{
 height: 70px;  }
+
+.keywored{
+  position: relative;
+  right: 15px;
+}
