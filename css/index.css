@@ -1,0 +1,172 @@
+@import url(common.css);
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
+* {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+}
+html {
+  background: url(../image/bg1.png) no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+header {
+  max-width: 100%;
+  height: 120px;
+}
+nav>ul{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color:#685753;
+  text-transform: uppercase;
+ 
+}
+nav>ul>li{
+  width: 200px;
+  padding-top: 20px;
+  text-align: center;
+  z-index: 1000;
+}
+nav>ul>li:nth-child(3){
+  width: 350px;
+}
+nav>ul>li:hover{
+  font-weight: bold;
+}
+main {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: auto;
+}
+.mian1,
+.main2 .main3 {
+  flex: 1;
+  height: auto;
+  margin: 0 auto;
+}
+.main2 > p {
+  font-size: 28px;
+  text-align: center;
+}
+.main2 > img {
+  max-width: 450px;
+  min-width: 200px;
+  animation: ani1 4s infinite;
+}
+@keyframes ani1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.one {
+  margin: 15px;
+  max-width: 75%;
+  height: 180px;
+  background: rgba(255, 255, 255, 0.452);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(15.4);
+  border-radius: 10px;
+  border: 1.5px solid #afafaf;
+  padding: 10px;
+}
+
+.line {
+  border-radius: 5px;
+  border: 1.5px solid #C1A8A0;
+  width: 98%;
+  height: 98%;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.border2 {
+width: 99%;
+  height: 96%;
+  top: 20px;
+  left: 5px;
+}
+
+.listall {
+  display: flex;
+}
+.listall > .list {
+  max-width: 160px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.title {
+  color: #888;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 8px;
+  min-width: 60px;
+  display: inline-block;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.main_icon>img{
+  max-width: 500px;
+  position: absolute;
+  top: 10px;
+  left:0;
+}
+.main_icon2>img{
+  max-width: 500px;
+  position: absolute;
+  top: 10px;
+  right:0;
+  z-index: -1;
+}
+
+.face >span, .name >p{
+  font-size: 18px;
+}
+.face-img{
+  border-radius: 10px;
+  min-width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  margin-left: 15px;
+  background-color: #bfbfbf;}
+  
+  .facebok{
+    display: flex;
+    align-items: center;
+  }
+  .facekeyword{
+    margin-top: 25px;
+  }
+  .facekeyword>p{
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+  .facekeyword>p>img{
+  
+  padding-top:3px;}
+
+  .keyword1 , .keyword{
+    height: 100px;
+    text-align: center;
+  }
+  .keyword1>img , .keyword>img{
+height: 70px;  }
