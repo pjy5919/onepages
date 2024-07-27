@@ -6,10 +6,18 @@
     'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
+
+@font-face {
+  font-family: 'HeirofLightRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../HeirofLightRegular.ttf') format('truetype');
+}
 html {
-  background: url(../image/bg1.png) no-repeat;
+  background: url(../image/bg2.png) no-repeat;
   background-size: cover;
   overflow: hidden;
+  color:#fff;
 }
 header {
   max-width: 100%;
@@ -21,9 +29,13 @@ nav>ul{
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  color:#685753;
+  color:#ffffff;
   text-transform: uppercase;
  
+}
+#player{
+  position: absolute;
+  top:0;
 }
 nav>ul>li{
   width: 200px;
@@ -48,6 +60,7 @@ main {
 .main2 > p {
   font-size: 28px;
   text-align: center;
+  font-family: 'HeirofLightRegular';
 }
 .main2 > img {
   max-width: 450px;
@@ -70,16 +83,16 @@ main {
   margin: 15px;
   /* max-width: 75%; */
   height: 180px;
-  background: rgba(255, 255, 255, 0.452);
+  background: rgba(191, 217, 255, 0.452);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(15.4);
   border-radius: 10px;
-  border: 1.5px solid #afafaf;
+  border: 1.5px solid #0e0683;
   padding: 10px;
 }
 .line {
   border-radius: 5px;
-  border: 1.5px solid #C1A8A0;
+  border: 1.5px solid #d4d4d4;
   width: 98%;
   height: 98%;
   position: absolute;
@@ -104,8 +117,8 @@ width: 99%;
   padding-top: 20px;
 }
 .title {
-  color: #888;
-  font-size: 12px;
+  color: #701bc0;
+  font-size: 14px;
   text-align: center;
   padding-top: 8px;
   min-width: 60px;
@@ -121,14 +134,14 @@ width: 99%;
 .main_icon>img{
   max-width: 500px;
   position: absolute;
-  top: 10px;
+  top: 40%;
   left:0;
   animation: ani2 5s infinite;
 }
 .main_icon2>img{
   max-width: 500px;
   position: absolute;
-  top: 10px;
+  top: 15px;
   right:0;
   z-index: -1;
   animation: ani2 5s infinite;
@@ -147,14 +160,19 @@ width: 99%;
 .face >span, .name >p{
   font-size: 18px;
 }
-.face-img>img{
+.face-img{
+  position: relative;
   border-radius: 10px;
-  min-width: 150px;
-  height: 150px;
+  min-width: 130px;
+  height: 130px;
   margin-top: 10px;
   margin-left: 15px;
-  background-color: #bfbfbf;}
-  
+  background-color: #bfbfbf;
+  overflow: hidden;}
+.face-img>img{
+  width: 130px;
+  position: absolute;
+}
   .facebok{
     display: flex;
     align-items: center;
@@ -180,4 +198,14 @@ height: 70px;  }
 .keywored{
   position: relative;
   right: 15px;
+}
+#play-pause-button{
+  margin: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+footer{
+  bottom: 0;
+  font-size: 5px;
+  color:#000;
 }
